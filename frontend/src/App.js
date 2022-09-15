@@ -39,7 +39,7 @@ const App = () => {
         {images.length ? (
           <Row xs={1} md={2} lg={3}>
             {images.map((image, i) => (
-              <Col className="mt-4" key={i}>
+              <Col key={i} className="pb-3">
                 <ImageCard image={image} deleteImage={handleDeleteImage} />
               </Col>
             ))}
